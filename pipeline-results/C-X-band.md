@@ -74,6 +74,13 @@ Sources: 64
 #### Amp vs Freq
 J0102+5824 corrected, spw 16~31, avg time = 1e9, avg scan, avg antenna, colorize by baseline
 <img width="1574" height="969" alt="image" src="https://github.com/user-attachments/assets/4f31930d-cfef-4c96-a955-dcc3591cd096" />
+```
+2026-06-11 21:19:05 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea05@E56 & *  [3&*] Spw=17 Chan=50 Freq=6.166 Corr=LL X=6.166 Y=1.43889 Observation=0
+2026-06-11 21:19:05 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea25@E48 & *  [19&*] Spw=17 Chan=46 Freq=6.162 Corr=LL X=6.162 Y=1.35003 Observation=0
+2026-06-11 21:19:05 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea26@W40 & *  [20&*] Spw=17 Chan=44 Freq=6.16 Corr=RR X=6.16 Y=1.45659 Observation=0
+2026-06-11 21:25:21 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea05@E56 & *  [3&*] Spw=19 Chan=33 Freq=6.405 Corr=RR X=6.405 Y=1.64133 Observation=0
+2026-06-11 21:25:21 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea25@E48 & *  [19&*] Spw=19 Chan=37 Freq=6.409 Corr=LL X=6.409 Y=1.66249 Observation=0
+```
 
 
 ---
