@@ -23,7 +23,7 @@ C
 ```
 
 ### 📋 LISTOBS
-Extract:
+Fields & SPWs:
 ```
 Fields: 3
   ID   Code Name                RA               Decl           Epoch   SrcId      nRows
@@ -119,9 +119,78 @@ spw='18' antenna='ea21'
 |---|---|---|---|---|---|
 | HH288_SE | 2 | 16~31 |ICRS 00:37:11.1515 +064.03.39.877 |	['0.063arcsec'] |	[16384, 16384] |
 
-<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/a2b858d5-4508-436a-acb6-c5544a571474" />
+<img width="1000" height="900" alt="image" src="https://github.com/user-attachments/assets/a2b858d5-4508-436a-acb6-c5544a571474" />
 
 
 ---
 
 ## C-X-band
+
+### 🔍 QA 
+```
+These data were processed using CASA 6.6.6.
+
+qa_comments:qa_standard: SRDP Wave 3
+qa_status: Pass 
+These data were processed using CASA 6.6.6.
+
+qa_comments:
+
+- Issues noted by staff:
+
+-- For Calibration:
+
+- No additional flagging was needed in order to pass the QA standard.
+
+C
+- Some antennas had low gain amplitudes in a few spectral windows. 
+
+X
+- None
+
+-- For Imaging:
+
+C, X
+- The pipeline limits the products created based on total product size. As a result, the image size may be smaller than ideal and the cell size may be larger than ideal. 
+```
+
+
+### 📋 LISTOBS
+Fields & SPWs:
+
+
+### 📈 SOLUTIONS
+Reference antenna: ea28
+
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/5fed9439-e45f-4087-ae11-755adef7c812" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/25395bd9-9a93-4035-9d55-ab28c036bbf5" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/bb0f0346-f5f7-45e8-b223-087259dd567c" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/455669a4-bdc3-4006-adeb-64b95d4d94b7" />
+
+
+### 📊 CALTABLES
+Examples:
+\
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/39a5b1f5-d9a8-4500-ba7a-78879b5caf74" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/e47050b8-5341-4561-b60a-2610e7fd8b79" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/ad28269d-9a9a-4dd9-85c5-09da10e699bc" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/566ed502-fd1c-4ef1-8781-02b1851192fc" />
+
+Again the reference antenna has a nasty Gain Amp.
+
+* Flagdata list:
+```
+spw='30' antenna='ea16' scan='4~6'
+spw='17' antenna='ea01, ea02, ea05, ea16, ea19, ea20, ea25, ea26'
+spw='18,19' antenna='ea13' scan='8~10'
+spw='30' antenna='ea13' scan='30~36'
+spw='30' antenna='ea18' scan='<6'
+spw='18, 19' antenna='ea21'
+spw='30:90~35' corr='LL'
+spw='17:70~95' antenna='ea03, ea07, ea08,ea11,ea13,ea14,ea15,ea17,ea28'
+spw='19:0~55' antenna='ea25' corr='LL'
+spw='22,23' antenna='ea09' corr='RR'
+spw='16:120~124' 
+spw='14:100~125'
+```
+
