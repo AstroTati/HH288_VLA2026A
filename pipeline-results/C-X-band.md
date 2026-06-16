@@ -119,6 +119,9 @@ spw='18' antenna='ea21'
 |---|---|---|---|---|---|
 | HH288_SE | 2 | 16~31 |ICRS 00:37:11.1515 +064.03.39.877 |	['0.063arcsec'] |	[16384, 16384] |
 
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/a2b858d5-4508-436a-acb6-c5544a571474" />
+
+
 ---
 
 ## C-X-band
