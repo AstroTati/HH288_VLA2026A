@@ -22,7 +22,7 @@ C
 - The imaging pipeline will have attempted self calibration on each of the target sources if possible.
 ```
 
-### 📋 listobs
+### 📋 LISTOBS
 Extract:
 ```
 Fields: 3
@@ -70,18 +70,54 @@ Sources: 64
 * 3C48 & J0102+5824: SPW 0~31
 * HH288: SPW 16~31
 
-### 📈 Analysis
-#### Amp vs Freq
-J0102+5824 corrected, spw 16~31, avg time = 1e9, avg scan, avg antenna, colorize by baseline
-<img width="1574" height="969" alt="image" src="https://github.com/user-attachments/assets/4f31930d-cfef-4c96-a955-dcc3591cd096" />
+### 📈 SOLUTIONS
+Reference antenna: ea11 --> Might need to re-run with a different refant (see below).
+\
+<img width="416" height="316" alt="image" src="https://github.com/user-attachments/assets/92151b2b-8d60-4b29-8aeb-191ace3667f9" />
+<img width="414" height="317" alt="image" src="https://github.com/user-attachments/assets/71572f3f-ad84-42f9-a35d-a171e4e46b83" />
+<img width="418" height="318" alt="image" src="https://github.com/user-attachments/assets/4f31930d-cfef-4c96-a955-dcc3591cd096" />
+<img width="418" height="318" alt="image" src="https://github.com/user-attachments/assets/96628641-a364-4e35-a452-b620294db82c" />
+
+Bottom left: J0102+5824 corrected, spw 16~31, avg time = 1e9, avg scan, avg antenna, colorize by baseline
+
+### 📊 CALTABLES
+
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/a72aecd3-c2ad-476b-bea9-96f4e52fd0f1" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/afe2600e-a85b-4202-99af-404e3af441c4" />
+\
+* Inspection:
+  
 ```
-2026-06-11 21:19:05 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea05@E56 & *  [3&*] Spw=17 Chan=50 Freq=6.166 Corr=LL X=6.166 Y=1.43889 Observation=0
-2026-06-11 21:19:05 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea25@E48 & *  [19&*] Spw=17 Chan=46 Freq=6.162 Corr=LL X=6.162 Y=1.35003 Observation=0
-2026-06-11 21:19:05 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea26@W40 & *  [20&*] Spw=17 Chan=44 Freq=6.16 Corr=RR X=6.16 Y=1.45659 Observation=0
-2026-06-11 21:25:21 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea05@E56 & *  [3&*] Spw=19 Chan=33 Freq=6.405 Corr=RR X=6.405 Y=1.64133 Observation=0
-2026-06-11 21:25:21 INFO PlotMS	Scan=6 Field=J0102+5824 [1] Time=2026/02/24/18:27:09.0000 ANT1=ea25@E48 & *  [19&*] Spw=19 Chan=37 Freq=6.409 Corr=LL X=6.409 Y=1.66249 Observation=0
+INFO PlotMS	Scan=13 Field=J0102+5824 [1] Time=2026/02/24/18:37:02.8286 BL=ea01@W32 & ea11@W08 [0&8] Spw=17 Chan=0 Freq=6.1795 Poln=1 X=5.27868e+09 Y=0.727226 Observation=0 # --> all scans this spw + corr
+INFO PlotMS	Scan=13 Field=J0102+5824 [1] Time=2026/02/24/18:37:02.8286 BL=ea01@W32 & ea11@W08 [0&8] Spw=17 Chan=0 Freq=6.1795 Poln=0 X=5.27868e+09 Y=0.876251 Observation=0 # --> only this scan both corr
+INFO PlotMS	Scan=7 Field=J0102+5824 [1] Time=2026/02/24/18:19:31.9917 BL=ea02@N24 & ea11@W08 [1&8] Spw=17 Chan=0 Freq=6.1795 Poln=1 X=5.27867e+09 Y=1.28296 Observation=0 # --> all scans this spw both corr
+INFO PlotMS	Scan=7 Field=J0102+5824 [1] Time=2026/02/24/18:19:31.9803 BL=ea03@E24 & ea11@W08 [2&8] Spw=19 Chan=0 Freq=6.4355 Poln=0 X=6.4355 Y=0.947588 Observation=0 # --> all scans this spw both corr
+INFO PlotMS	Scan=13 Field=J0102+5824 [1] Time=2026/02/24/18:37:02.8286 BL=ea05@E56 & ea11@W08 [3&8] Spw=17 Chan=0 Freq=6.1795 Poln=0 X=6.1795 Y=0.797112 Observation=0 # --> this scan, both corr
+INFO PlotMS	Scan=7 Field=J0102+5824 [1] Time=2026/02/24/18:19:31.9917 BL=ea01@W32 & ea11@W08 [0&8] Spw=17 Chan=0 Freq=6.1795 Poln=1 X=6.1795 Y=0.792257 Observation=0 # --> all scans this spw both corr
+INFO PlotMS	Scan=9 Field=J0102+5824 [1] Time=2026/02/24/18:25:28.0914 BL=ea13@E08 & ea11@W08 [10&8] Spw=19 Chan=0 Freq=6.4355 Poln=0 X=5.27867e+09 Y=0.727599 Observation=0 # --> this scan both corr
+INFO PlotMS	Scan=13 Field=J0102+5824 [1] Time=2026/02/24/18:37:02.8240 BL=ea25@E48 & ea11@W08 [19&8] Spw=19 Chan=0 Freq=6.4355 Poln=0 X=5.27868e+09 Y=1.2022 Observation=0 # --> all scans both corr
+INFO PlotMS	Scan=9 Field=J0102+5824 [1] Time=2026/02/24/18:25:28.0564 BL=ea25@E48 & ea11@W08 [19&8] Spw=17 Chan=0 Freq=6.1795 Poln=1 X=5.27867e+09 Y=0.810635 Observation=0 # --> all scans both corr, also spw 19 and for antennas ea13, ea21, ea25, ea26 (only spw 17)
 ```
 
+* Flagdata list
+```
+spw = '17', antenna = ea11, ea01, ea02, ea03, ea05, ea13, ea21, ea25, ea26
+spw = '19:0~55', antenna = ea11, ea03, ea05 ea12, ea13,  ea21, ea25
+spw='16:120~125,18:119~123' antenna='ea05, ea25'
+spw='18' antenna='ea21'
+```
+
+➡️ After (ea11 still looks wonky):
+
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/ba5f8bdc-01c3-4d67-b786-dfb8a1215852" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/6e7b154c-1383-4d38-a8af-51bd21cbf395" />
+
+
+
+### 🌌 IMAGING
+|field |field ID | spw |	phase center |	cell |	imsize | 
+|---|---|---|---|---|---|
+| HH288_SE | 2 | 16~31 |ICRS 00:37:11.1515 +064.03.39.877 |	['0.063arcsec'] |	[16384, 16384] |
 
 ---
 
