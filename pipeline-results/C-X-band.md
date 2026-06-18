@@ -186,11 +186,16 @@ spw='18,19' antenna='ea13' scan='8~10'
 spw='30' antenna='ea13' scan='30~36'
 spw='30' antenna='ea18' scan='<6'
 spw='18, 19' antenna='ea21'
-spw='30:90~35' corr='LL'
-spw='17:70~95' antenna='ea03, ea07, ea08,ea11,ea13,ea14,ea15,ea17,ea28'
+spw='30:90~95' corr='LL'
 spw='19:0~55' antenna='ea25' corr='LL'
 spw='22,23' antenna='ea09' corr='RR'
-spw='16:120~124' 
-spw='14:100~125'
+spw='17:70~95' antenna='ea03, ea07, ea08,ea11,ea13,ea14,ea15,ea17,ea28'
+spw='6:30~75,14:100~125,16:120~124,18:120~124,19:0~55'
 ```
+
+After:
+\
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/3cc7f246-1ba1-4bf9-bf9e-caebddf8dd9a" />
+<img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/6f3bab80-e74b-4c74-9e57-78223760670e" />
+
 
