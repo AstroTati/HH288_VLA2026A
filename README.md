@@ -4,18 +4,16 @@ The data were initially processed with the standard NRAO pipeline and subsequent
 
 ### Structure
 ```
-├── data-collection/      # Details on the SBs
+├── data-collection/          # Details on the SBs
 │   ├── L-band.md   
 │   ├── S-band.md     
 │   ├── C-X-band.md    
 │
-├── pipeline-results/     # Pipeline outputs
+├── pipeline-calibration/     # Pipeline results & further calibration
 │
-├── calibration/
-│
-├── imaging/
+├── imaging/                  # tclean details
 │
 └── outputs/
-    ├── figures/
-    └── reports/
+    ├── images/               # Figures as png
+    └── reports/              # Core positions, statistics, etc.
 ```
