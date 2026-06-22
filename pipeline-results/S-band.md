@@ -66,10 +66,14 @@ Examples ea28:
 <img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/82f030cc-4ff0-4b67-8c70-91a0c58c729a" />
 <img width="377" height="252" alt="image" src="https://github.com/user-attachments/assets/2411c0d9-a90d-4917-994f-6b030ef1817f" />
 
-\
+
 * Inspection:
 ```
-spw='9' antenna='ea06,ea07,ea13,ea19,ea22, ea25'
+spw='9' antenna='ea01,ea06,ea07,ea13,ea19,ea22, ea25'
+spw='9:100~110' antenna='ea28'
 spw='8' antenna='ea04'
 antenna='ea21' scan='10~12'
+spw='11:115~124,12:0~25,13' antenna='ea23' corr='LL'
+spw='13:50~90' antenna='ea16' corr='RR'
+spw='13' antenna='ea06' scan='14~16' corr='LL'
 ```
